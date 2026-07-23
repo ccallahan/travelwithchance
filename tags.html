@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neurodivergent travel planning — smooth flights, quiet hotels, zero transit chaos. We engineer predictable, low-sensory itineraries for neurodivergent adults and families.">
+
+  <title>Topics — Travel with Chance</title>
+
+  <!-- Preconnect for Google Fonts performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter: highly legible variable-weight font optimised for screen reading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://travelwithchance.com/theme/css/main.css">
+
+</head>
+<body>
+
+  <!-- Skip-to-content for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── Navigation ─────────────────────────────────── -->
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="https://travelwithchance.com/" class="nav-logo" aria-label="Travel with Chance home">
+        <span class="nav-logo-icon" aria-hidden="true">✈</span>
+        Travel with Chance
+      </a>
+
+      <!-- Mobile hamburger button -->
+      <button class="nav-toggle"
+              id="nav-toggle"
+              aria-expanded="false"
+              aria-controls="nav-links"
+              aria-label="Open navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6"  x2="21" y2="6"  />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="https://travelwithchance.com/#how-it-works">How It Works</a></li>
+        <li><a href="https://travelwithchance.com/#services">Services</a></li>
+        <li><a href="https://travelwithchance.com/#pricing">Pricing</a></li>
+        <li>
+          <a href="https://secure.foratravel.com/intake/sHRQWTXpeX" class="btn btn--primary btn--sm">
+            Free Consultation
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- ── /Navigation ────────────────────────────────── -->
+
+  <!-- Sentinel element used by IntersectionObserver to detect scroll position -->
+  <div id="nav-sentinel" aria-hidden="true" style="position:absolute;top:80px;height:1px;width:1px;"></div>
+
+  <!-- ── Main content ───────────────────────────────── -->
+  <main id="main-content">
+<div class="page-hero">
+  <div class="container">
+    <h1>Topics</h1>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <ul style="display:flex;flex-wrap:wrap;gap:0.75rem;list-style:none;padding:0;">
+    </ul>
+  </div>
+</section>
+  </main>
+  <!-- ── /Main content ──────────────────────────────── -->
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div>
+          <a href="https://travelwithchance.com/" class="footer-logo" aria-label="Travel with Chance home">
+            <span aria-hidden="true">✈</span>
+            Travel with Chance
+          </a>
+          <p class="footer-tagline">
+            Sensory-vetted travel planning for neurodivergent adults and families.
+            We engineer calm, predictable journeys from departure to arrival.
+          </p>
+        </div>
+
+        <!-- Nav column -->
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="https://travelwithchance.com/#how-it-works">How It Works</a></li>
+            <li><a href="https://travelwithchance.com/#services">Services</a></li>
+            <li><a href="https://travelwithchance.com/#pricing">Pricing</a></li>
+            <li><a href="https://secure.foratravel.com/intake/sHRQWTXpeX">Schedule a Consultation</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact column -->
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul>
+              <li><a href="mailto:chance.callahan@fora.travel">Email</a></li>
+            <li><a href="https://secure.foratravel.com/intake/sHRQWTXpeX">Free Planning Consultation</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Travel with Chance. All rights reserved.</span>
+        <span>Designed with neurodivergent travelers in mind.</span>
+      </div>
+
+    </div>
+  </footer>
+  <!-- ── /Footer ──────────────────────────────────────── -->
+
+  <script>
+    // ── Mobile navigation toggle ───────────────────────
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var links  = document.getElementById('nav-links');
+      if (!toggle || !links) return;
+
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label',    open ? 'Close navigation menu' : 'Open navigation menu');
+      });
+
+      // Close when any nav link is activated
+      links.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          links.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'Open navigation menu');
+        });
+      });
+
+      // Close when focus leaves the nav entirely
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && links.classList.contains('is-open')) {
+          links.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.focus();
+        }
+      });
+    }());
+
+    // ── Sticky nav background on scroll ───────────────
+    (function () {
+      var nav      = document.getElementById('site-nav');
+      var sentinel = document.getElementById('nav-sentinel');
+      if (!nav || !sentinel || !window.IntersectionObserver) return;
+
+      new IntersectionObserver(function (entries) {
+        nav.classList.toggle('is-scrolled', !entries[0].isIntersecting);
+      }, { threshold: 0 }).observe(sentinel);
+    }());
+  </script>
+
+
+</body>
+</html>
