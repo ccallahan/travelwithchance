@@ -849,10 +849,39 @@ p:last-child { margin-bottom: 0; }
 .footer-bottom a { color: rgba(255,255,255,.4); text-decoration: none; }
 .footer-bottom a:hover { color: rgba(255,255,255,.8); }
 
+.footer-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-badge a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--ease-fast);
+}
+
+.footer-badge a:hover {
+  opacity: 0.8;
+  color: rgba(255,255,255,.4);
+}
+
+.footer-badge img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
 @media (max-width: 700px) {
   .footer-grid { grid-template-columns: 1fr; gap: var(--sp-8); }
   .footer-tagline { max-width: none; }
   .footer-bottom { flex-direction: column; text-align: center; }
+  
+  .footer-badge img {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 /* ─────────────────────────────────────────
