@@ -868,7 +868,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .footer-badge img {
-  width: 150px;
+  width: 200px;
   height: auto;
   object-fit: contain;
 }
@@ -879,7 +879,7 @@ p:last-child { margin-bottom: 0; }
   .footer-bottom { flex-direction: column; text-align: center; }
   
   .footer-badge img {
-    width: 120px;
+    width: 160px;
     height: auto;
   }
 }
