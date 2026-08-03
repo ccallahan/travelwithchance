@@ -983,6 +983,33 @@ p:last-child { margin-bottom: 0; }
   }
 }
 
+/* Summary card (optional per-post metadata) */
+.summary-card {
+  margin-bottom: var(--sp-8);
+  padding: var(--sp-6);
+  background: linear-gradient(135deg, rgba(26, 107, 138, 0.08) 0%, rgba(232, 155, 53, 0.12) 100%);
+  border: 1px solid rgba(26, 107, 138, 0.16);
+  border-left: 4px solid var(--clr-accent);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.summary-card-label {
+  margin-bottom: var(--sp-2);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-primary);
+}
+
+.summary-card-content {
+  color: var(--clr-dark);
+  font-weight: var(--fw-medium);
+  white-space: pre-line;
+  line-height: 1.7;
+}
+
 /* Prose (article / page body) */
 .prose-container {
   max-width: 760px;
