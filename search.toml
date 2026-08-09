@@ -1,0 +1,43 @@
+[input]
+html_selector = "main"
+base_directory = "/Users/ccallahan/src/travelwithchance/output"
+
+[[input.files]]
+path = "pacing-yourself-during-travel-tips-and-strategies.html"
+url = "/pacing-yourself-during-travel-tips-and-strategies.html"
+title = "Pacing Yourself During Travel: Tips and Strategies"
+
+[[input.files]]
+path = "trains-planes-and-automobiles-pros-and-cons-for-high-functioning-autistics.html"
+url = "/trains-planes-and-automobiles-pros-and-cons-for-high-functioning-autistics.html"
+title = "Trains, Planes, and Automobiles: Pros and Cons for High Functioning Autistics"
+
+[[input.files]]
+path = "eating-food-while-travelling-issues-that-autistics-face.html"
+url = "/eating-food-while-travelling-issues-that-autistics-face.html"
+title = "Eating Food While Travelling: Issues That Autistics Face"
+
+[[input.files]]
+path = "destination-overview-alcatraz-east-crime-museum-pigeon-forge-tn.html"
+url = "/destination-overview-alcatraz-east-crime-museum-pigeon-forge-tn.html"
+title = "Destination Overview: Alcatraz East Crime Museum (Pigeon Forge, TN)"
+
+[[input.files]]
+path = "flying-with-young-level-3-autistic-kiddos-proven-success-strategies.html"
+url = "/flying-with-young-level-3-autistic-kiddos-proven-success-strategies.html"
+title = "Flying with Young, Level 3 Autistic Kiddos: Proven Success Strategies"
+
+[[input.files]]
+path = "travel-insurance-for-autism-what-families-must-know.html"
+url = "/travel-insurance-for-autism-what-families-must-know.html"
+title = "Travel Insurance for Autism: What Families Must Know"
+
+[[input.files]]
+path = "flying-with-medication-a-low-stress-guide-for-neurodivergent-travelers.html"
+url = "/flying-with-medication-a-low-stress-guide-for-neurodivergent-travelers.html"
+title = "Flying with Medication: A Low-Stress Guide for Neurodivergent Travelers"
+
+[[input.files]]
+path = "airport-lounge-access-for-neurodivergent-travelers.html"
+url = "/airport-lounge-access-for-neurodivergent-travelers.html"
+title = "Airport Lounge Access for Neurodivergent Travelers"
