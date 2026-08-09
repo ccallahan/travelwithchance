@@ -3,6 +3,11 @@ html_selector = "main"
 base_directory = "/Users/ccallahan/src/travelwithchance/output"
 
 [[input.files]]
+path = "managing-hidden-disabilities-for-you-and-your-child-while-traveling.html"
+url = "/managing-hidden-disabilities-for-you-and-your-child-while-traveling.html"
+title = "Managing Hidden Disabilities For You and Your Child While Traveling"
+
+[[input.files]]
 path = "coping-with-overstimulation-during-travel.html"
 url = "/coping-with-overstimulation-during-travel.html"
 title = "Coping with Overstimulation During Travel"
