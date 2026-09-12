@@ -3,6 +3,11 @@ html_selector = "main"
 base_directory = "/Users/ccallahan/src/travelwithchance/output"
 
 [[input.files]]
+path = "factoring-winter-weather-into-neurodiverse-travel-plans.html"
+url = "/factoring-winter-weather-into-neurodiverse-travel-plans.html"
+title = "Factoring Winter Weather into Neurodiverse Travel Plans"
+
+[[input.files]]
 path = "managing-hidden-disabilities-for-you-and-your-child-while-traveling.html"
 url = "/managing-hidden-disabilities-for-you-and-your-child-while-traveling.html"
 title = "Managing Hidden Disabilities For You and Your Child While Traveling"
