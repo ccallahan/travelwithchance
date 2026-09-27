@@ -3,6 +3,11 @@ html_selector = "main"
 base_directory = "/Users/ccallahan/src/travelwithchance/output"
 
 [[input.files]]
+path = "2026-love-for-autism-fundraiser.html"
+url = "/2026-love-for-autism-fundraiser.html"
+title = "2026 Love for Autism Fundraiser"
+
+[[input.files]]
 path = "factoring-winter-weather-into-neurodiverse-travel-plans.html"
 url = "/factoring-winter-weather-into-neurodiverse-travel-plans.html"
 title = "Factoring Winter Weather into Neurodiverse Travel Plans"
