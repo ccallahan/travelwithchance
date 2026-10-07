@@ -948,7 +948,7 @@ p:last-child { margin-bottom: 0; }
 .post-preview-media {
   flex: 0 0 140px;
   display: block;
-  border-radius: var(--r-md);
+  border-radius: var(--r);
   overflow: hidden;
   border: 1px solid var(--clr-border);
   background: var(--clr-surface);
@@ -1038,3 +1038,144 @@ p:last-child { margin-bottom: 0; }
 
 .prose a { font-weight: var(--fw-medium); }
 .prose code { background: var(--clr-surface-alt); padding: 0.15em 0.35em; border-radius: var(--r-sm); font-size: 0.9em; }
+
+/* ─────────────────────────────────────────
+   16. Shared helpers, article extras
+───────────────────────────────────────── */
+.btn--block { width: 100%; justify-content: center; }
+
+.hero-price {
+  margin: var(--sp-5) 0 var(--sp-4);
+  font-size: 1.05rem;
+  font-weight: var(--fw-semibold);
+  color: #E8F4FF;
+}
+.hero-price strong { color: #F4C16D; }
+
+.section-more { max-width: none; margin-top: var(--sp-10); text-align: center; }
+.article-card h3 { font-size: var(--fs-xl); margin-bottom: var(--sp-3); }
+.article-card h3 a { color: var(--clr-dark); text-decoration: none; }
+.article-card h3 a:hover { color: var(--clr-primary); }
+
+.post-list { display: grid; gap: var(--sp-5); }
+
+.page-hero-meta a { color: rgba(255,255,255,.65); }
+
+.prose img { max-width: 100%; height: auto; border-radius: var(--r); }
+
+.prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin-bottom: var(--sp-6);
+  font-size: var(--fs-sm);
+}
+.prose th,
+.prose td {
+  padding: var(--sp-3) var(--sp-4);
+  border: 1px solid var(--clr-border);
+  text-align: left;
+  vertical-align: top;
+}
+.prose th { background: var(--clr-surface-alt); font-weight: var(--fw-semibold); }
+
+.article-cta {
+  margin-top: var(--sp-12);
+  padding: var(--sp-8);
+  background: var(--clr-primary-light);
+  border: 1px solid rgba(26, 107, 138, 0.16);
+  border-radius: var(--r-lg);
+  text-align: center;
+}
+.article-cta h2 { font-size: var(--fs-2xl); margin-bottom: var(--sp-3); }
+.article-cta p  { margin-inline: auto; margin-bottom: var(--sp-6); }
+
+.related-posts { margin-top: var(--sp-12); }
+.related-posts h2 { font-size: var(--fs-xl); margin-bottom: var(--sp-4); }
+.related-posts li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--sp-2) var(--sp-4);
+  padding-block: var(--sp-3);
+  border-top: 1px solid var(--clr-border);
+}
+.related-posts a    { font-weight: var(--fw-medium); }
+.related-posts span { font-size: var(--fs-sm); color: var(--clr-text-muted); }
+
+.not-found { display: flex; flex-wrap: wrap; gap: var(--sp-4); justify-content: center; }
+
+/* ─────────────────────────────────────────
+   17. Who it's for, Meet Chance
+───────────────────────────────────────── */
+.who-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--sp-4) var(--sp-8);
+  max-width: 900px;
+  margin-inline: auto;
+}
+.who-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  line-height: 1.6;
+}
+.who-list .feature-check { margin-top: 0.2em; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+  gap: var(--sp-12);
+  align-items: center;
+  max-width: 1000px;
+}
+.about-photo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+}
+.about-copy h2 { margin-bottom: var(--sp-4); }
+.about-copy p  { margin-bottom: var(--sp-4); }
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-6);
+  margin-top: var(--sp-6);
+}
+.about-actions img { display: block; width: 180px; height: auto; }
+
+@media (max-width: 780px) {
+  .about-grid  { grid-template-columns: 1fr; gap: var(--sp-8); }
+  .about-photo { max-width: 320px; margin-inline: auto; }
+}
+
+.about-page-photo {
+  float: right;
+  width: 260px;
+  margin: 0 0 var(--sp-5) var(--sp-6);
+  box-shadow: var(--shadow);
+}
+@media (max-width: 600px) {
+  .about-page-photo { float: none; display: block; width: 100%; max-width: 320px; margin: 0 auto var(--sp-6); }
+}
+
+.cta-alt { max-width: none; margin: var(--sp-5) auto 0; font-size: var(--fs-sm); }
+.final-cta .cta-alt   { color: rgba(255,255,255,.8); margin-bottom: 0; font-size: var(--fs-base); }
+.final-cta .cta-alt a { color: white; }
+.article-cta .cta-alt { margin-bottom: 0; }
+
+/* The Fora badge artwork is dark; flip it for the dark footer. */
+.footer-badge img { filter: invert(1); opacity: .75; }
+
+/* ─────────────────────────────────────────
+   18. FAQ
+───────────────────────────────────────── */
+.faq-list { max-width: var(--max-w-text); margin-inline: auto; }
+.faq-item { padding-block: var(--sp-5); border-top: 1px solid var(--clr-border); }
+.faq-item:last-child { border-bottom: 1px solid var(--clr-border); }
+.faq-item dt { font-weight: var(--fw-semibold); color: var(--clr-dark); margin-bottom: var(--sp-2); }
+.faq-item dd { margin: 0; line-height: 1.7; }
